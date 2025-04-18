@@ -46,10 +46,7 @@ export async function POST(req: Request) {
       html: `
         <p>Hi ${name},</p>
         <p>Thanks for registering! Here is your ticket ID: <strong>${ticketId}</strong></p>
-        <p>Show this QR code at the event:</p>
-        <img src="${qrCodeUrl}" alt="QR Code" />
-      `,
-    }
+      `,  }
 
     await transporter.sendMail(mailOptions)
 
