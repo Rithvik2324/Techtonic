@@ -13,8 +13,6 @@ export const events: Event[] = [
     "Preliminary round followed by finals",
     "Judging based on innovation, execution, and presentation"
   ],
-  prizes: ["₹20,000 for winning team",
-           "₹10,000 for runners-up"],
     category: "cat1",
     formUrl: "https://forms.gle/NLdLHYckW4Vsq2Pr7",
   },
@@ -29,9 +27,7 @@ export const events: Event[] = [
       "Three rounds: Time trial, Obstacle course, Battle royale",
       "Cars must be autonomous or remote-controlled",
       "Maximum dimensions: 30cm x 20cm x 15cm"
-    ], 
-    prizes: ["₹15,000 for winning team",  
-      "₹7,500 for runners-up"],   
+    ],   
     category: "cat1",
     formUrl: "https://forms.gle/1iQR7YXfuWjux7wy9",
   },

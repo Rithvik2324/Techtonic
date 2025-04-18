@@ -14,7 +14,6 @@ export type Event = {
   description: string
   longDescription?: string
   rules?: string[]
-  prizes?: string[]
   category: "cat1" | "cat2" | "cat3"
   formUrl?: string
   registrationType?: "online" | "onspot";
