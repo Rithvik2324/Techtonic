@@ -47,14 +47,13 @@ export default function EventHighlights() {
           </div>
 
           <div className="text-center">
-            <Link
-              href="/techtonic-brochure.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-secondary underline hover:text-primary transition-colors"
-            >
-              Download Event Brochure
-            </Link>
+          <a
+  href="/brochure/TechTonic_Brochure.pdf"
+  download
+  className="pixel-button text-sm inline-block text-center px-4 py-2"
+>
+  Download Brochure
+</a>
           </div>
         </div>
 
