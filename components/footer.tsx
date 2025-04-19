@@ -46,32 +46,18 @@ export default function Footer() {
 
           <div>
             <h3 className="font-pixel text-lg mb-4 text-secondary">Contact Us</h3>
-            <p className="text-sm mb-2">Email: techtonic25@example.com</p>
-            <p className="text-sm mb-4">Phone: +91 9876543210</p>
+            <p className="text-sm mb-2">Email:techtonic.event@gmail.com</p>
+            <p className="text-sm mb-2">Phone: 9542940058 (Srivibhav)</p>
+            <p className="text-sm mb-2">Phone: 8074914428 (VamshiVasam)</p>
+            <p className="text-sm mb-2">Phone: 7995138562 (Veeksha)</p>
             <div className="flex gap-4">
               <a
-                href="https://twitter.com/techtonic25"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-white hover:text-primary transition-colors"
-              >
-                Twitter
-              </a>
-              <a
-                href="https://instagram.com/techtonic25"
+                href="https://www.instagram.com/events.ngitkmec?igsh=MXV0NzZwZmNhMnBkNA=="
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white hover:text-primary transition-colors"
               >
                 Instagram
-              </a>
-              <a
-                href="https://discord.gg/techtonic25"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-white hover:text-primary transition-colors"
-              >
-                Discord
               </a>
             </div>
           </div>

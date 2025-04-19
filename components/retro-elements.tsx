@@ -1,4 +1,4 @@
-"use client"
+/*"use client"
 
 import { useEffect, useState } from "react"
 import { motion } from "framer-motion"
@@ -7,7 +7,7 @@ import Image from "next/image"
 export function FloatingControllers() {
   return (
     <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden">
-      {/* Joystick */}
+      {}
       <motion.div
         className="absolute"
         initial={{ x: "10%", y: "20%", rotate: 0 }}
@@ -25,7 +25,7 @@ export function FloatingControllers() {
         <Image src="/joystick.png" alt="Arcade Joystick" width={80} height={80} className="opacity-20 md:opacity-30" />
       </motion.div>
 
-      {/* Gamepad */}
+      {}
       <motion.div
         className="absolute"
         initial={{ x: "80%", y: "70%", rotate: 0 }}
@@ -43,7 +43,7 @@ export function FloatingControllers() {
         <Image src="/gamepad.png" alt="Retro Gamepad" width={100} height={60} className="opacity-20 md:opacity-30" />
       </motion.div>
 
-      {/* Arcade buttons */}
+      {}
       <motion.div
         className="absolute"
         initial={{ x: "70%", y: "30%", scale: 1 }}
@@ -64,7 +64,7 @@ export function FloatingControllers() {
         </div>
       </motion.div>
 
-      {/* Cartridge */}
+      {}
       <motion.div
         className="absolute hidden md:block"
         initial={{ x: "20%", y: "80%", rotate: 0 }}
@@ -252,3 +252,5 @@ export function RetroElements() {
     </>
   )
 }
+*/
+

@@ -53,9 +53,8 @@ export default function DashboardPage() {
             <div className="space-y-4">
               <div className="border-b border-white/20 pb-4">
                 <h3 className="font-pixel text-accent">April 30, 2025</h3>
-                <p className="text-sm mt-2">9:00 AM - Registration Opens</p>
-                <p className="text-sm">10:00 AM - Opening Ceremony</p>
-                <p className="text-sm">11:00 AM - Events Begin</p>
+                <p className="text-sm mt-2">9:15 AM - Registration Opens</p>
+                <p className="text-sm">10:00 AM - Events Begin</p>
               </div>
 
               <p className="text-sm text-muted-foreground">

@@ -41,7 +41,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     email: "",
     phoneNumber: "",
     rollNumber: "",
-    collegeName: "",
+    collegeName: "", // This will hold the selected college name
   })
   const [isLoading, setIsLoading] = useState(false)
   const { toast } = useToast()
@@ -320,13 +320,19 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
                   <Label htmlFor="collegeName" className="font-pixel text-xs">
                     College Name
                   </Label>
-                  <Input
+                  <select
                     id="collegeName"
                     value={formData.collegeName}
                     onChange={(e) => setFormData({ ...formData, collegeName: e.target.value })}
-                    className="bg-black border-white"
+                    className="bg-black text-white border-white px-4 py-2 rounded"
                     required
-                  />
+                  >
+                    <option value="">Select College</option>
+                    <option value="KMIT">KMIT</option>
+                    <option value="KMEC">KMEC</option>
+                    <option value="NGIT">NGIT</option>
+                    <option value="KMCE">KMCE</option>
+                  </select>
                 </div>
               </>
             )}

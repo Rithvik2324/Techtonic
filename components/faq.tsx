@@ -36,7 +36,7 @@ const faqItems = [
   {
     question: "I'm having trouble with registration. Who can I contact?",
     answer:
-      "Please email us at support@techtonic25.example.com or message us on our social media channels for prompt assistance.",
+      "Please mail us at techtonic.event@gmail.com or message us on our social media channels for prompt assistance.",
   },
 ]
 
@@ -62,31 +62,16 @@ export default function Faq() {
 
           <div className="mt-12 text-center">
             <h3 className="font-pixel text-lg mb-4 text-secondary">Still have questions?</h3>
-            <p className="mb-6">Contact us at techtonic25@example.com</p>
+            <p className="mb-6">Contact us at </p>
+            <p className="mb-6">techtonic.event@gmail.com</p>
             <div className="flex justify-center gap-4">
               <a
-                href="https://twitter.com/techtonic25"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="pixel-button px-4 py-2 text-xs"
-              >
-                Twitter
-              </a>
-              <a
-                href="https://instagram.com/techtonic25"
+                href="https://www.instagram.com/events.ngitkmec?igsh=MXV0NzZwZmNhMnBkNA=="
                 target="_blank"
                 rel="noopener noreferrer"
                 className="pixel-button px-4 py-2 text-xs"
               >
                 Instagram
-              </a>
-              <a
-                href="https://discord.gg/techtonic25"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="pixel-button px-4 py-2 text-xs"
-              >
-                Discord
               </a>
             </div>
           </div>

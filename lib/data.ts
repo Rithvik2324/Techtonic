@@ -3,7 +3,7 @@ import type { Event } from "@/lib/types"
 export const events: Event[] = [
   {
     id: "hackathon",
-    title: "HackNova(HACKATHON)",
+    title: "HackNova",
     description: "24-hour coding challenge to build innovative solutions. Form teams of 3-4 members.",
     longDescription: "24-hour coding challenge to build innovative solutions. Form teams of 3-4 members.",
     rules: [

@@ -6,8 +6,6 @@ import { useAuth } from "@/lib/use-auth"
 import { motion } from "framer-motion"
 import { useRouter } from "next/navigation"
 
-import Image from "next/image"
-
 export default function HeroBanner() {
   const { user, openAuthModal } = useAuth()
   const router = useRouter()
@@ -52,78 +50,37 @@ export default function HeroBanner() {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
-      {/* Animated background elements */}
       <div className="absolute inset-0 z-0">
         <div className="pixel-clouds"></div>
         <div className="absolute inset-0 bg-gradient-to-b from-purple-900/20 to-black/80"></div>
+        {isMounted &&
+          Array.from({ length: 20 }).map((_, i) => {
+            const randomX = (i * 5) % 100
+            const randomY = (i * 7) % 100
+            const randomOpacity = 0.2 + ((i * 3) % 8) / 10
+            const randomDuration = 10 + ((i * 11) % 20)
 
-        {/* Floating pixels - only render on client side */}
-        {isMounted && (
-          <>
-            {Array.from({ length: 20 }).map((_, i) => {
-              // Safe random values that don't depend on window
-              const randomX = (i * 5) % 100
-              const randomY = (i * 7) % 100
-              const randomOpacity = 0.2 + ((i * 3) % 8) / 10
-              const randomDuration = 10 + ((i * 11) % 20)
-
-              return (
-                <motion.div
-                  key={i}
-                  className="absolute w-2 h-2 bg-secondary rounded-none"
-                  initial={{
-                    x: `${randomX}%`,
-                    y: `${randomY}%`,
-                    opacity: randomOpacity,
-                  }}
-                  animate={{
-                    y: [null, "-100%"],
-                    opacity: [null, 0],
-                  }}
-                  transition={{
-                    duration: randomDuration,
-                    repeat: Number.POSITIVE_INFINITY,
-                    ease: "linear",
-                  }}
-                />
-              )
-            })}
-
-            {/* Animated 8-bit characters jumping */}
-            <motion.div
-              className="absolute bottom-20 left-[10%] hidden md:block"
-              animate={{
-                y: ["0%", "-30%", "0%"],
-              }}
-              transition={{
-                duration: 1,
-                repeat: Number.POSITIVE_INFINITY,
-                repeatType: "loop",
-                ease: "easeInOut",
-                repeatDelay: 1.5,
-              }}
-            >
-              <Image src="/mario.png" alt="8-bit character" width={48} height={48} className="opacity-60" />
-            </motion.div>
-
-            <motion.div
-              className="absolute bottom-20 right-[10%] hidden md:block"
-              animate={{
-                y: ["0%", "-20%", "0%"],
-              }}
-              transition={{
-                duration: 0.8,
-                repeat: Number.POSITIVE_INFINITY,
-                repeatType: "loop",
-                ease: "easeInOut",
-                repeatDelay: 2,
-              }}
-            >
-              <Image src="/pacman.png" alt="8-bit character" width={40} height={40} className="opacity-60" />
-            </motion.div>
-          </>
-        )}
-
+            return (
+              <motion.div
+                key={i}
+                className="absolute w-2 h-2 bg-secondary rounded-none"
+                initial={{
+                  x: `${randomX}%`,
+                  y: `${randomY}%`,
+                  opacity: randomOpacity,
+                }}
+                animate={{
+                  y: [null, "-100%"],
+                  opacity: [null, 0],
+                }}
+                transition={{
+                  duration: randomDuration,
+                  repeat: Number.POSITIVE_INFINITY,
+                  ease: "linear",
+                }}
+              />
+            )
+          })}
         <div className="pixel-terrain"></div>
       </div>
 
@@ -156,7 +113,6 @@ export default function HeroBanner() {
             30th April 2025
           </motion.p>
 
-          {/* Countdown timer */}
           <motion.div
             className="grid grid-cols-4 gap-2 md:gap-4 max-w-md mx-auto mb-10"
             initial={{ y: 20, opacity: 0 }}
@@ -181,7 +137,6 @@ export default function HeroBanner() {
             </div>
           </motion.div>
 
-
           <motion.div
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
@@ -192,8 +147,6 @@ export default function HeroBanner() {
               onClick={handleRegisterClick}
             >
               <span className="relative z-10">{user ? "EXPLORE EVENTS" : "REGISTER NOW"}</span>
-
-              {/* Animated pixel effect around button on hover */}
               <div className="absolute -inset-1 opacity-0 group-hover:opacity-100 transition-opacity">
                 <div className="absolute top-0 left-0 w-2 h-2 bg-primary"></div>
                 <div className="absolute top-0 right-0 w-2 h-2 bg-primary"></div>
