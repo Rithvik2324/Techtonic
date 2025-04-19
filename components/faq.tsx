@@ -1,6 +1,6 @@
-"use client"
+"use client";
 
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 const faqItems = [
   {
@@ -38,7 +38,7 @@ const faqItems = [
     answer:
       "Please mail us at techtonic.event@gmail.com or message us on our social media channels for prompt assistance.",
   },
-]
+];
 
 export default function Faq() {
   return (
@@ -78,5 +78,6 @@ export default function Faq() {
         </div>
       </div>
     </section>
-  )
+  );
 }
+
