@@ -1,18 +1,9 @@
-import type { MetadataRoute } from "next"
+import { ReactNode } from 'react';
 
-export default function manifest(): MetadataRoute.Manifest {
-  return {
-    name: "TECHTONIC'25",
-    short_name: "TECHTONIC",
-    description: "The ultimate arcade & retro video game themed technical fest",
-    start_url: "/",
-    display: "standalone",
-    background_color: "#000000",
-    theme_color: "#7829ff",
-    icons: []
-  }
+interface ClientWrapperProps {
+  children: ReactNode;
 }
 
-
-
-
+export default function ClientWrapper({ children }: ClientWrapperProps) {
+  return <>{children}</>;
+}

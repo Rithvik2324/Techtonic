@@ -1,6 +1,6 @@
 import Gallery from "@/components/gallery"
 
-/*import { ClientWrapper } from "@/components/client-wrapper"
+import  ClientWrapper  from "@/components/client-wrapper"
 
 export default function GalleryPage() {
   return (
@@ -9,5 +9,4 @@ export default function GalleryPage() {
     </ClientWrapper>
   )
 }
-*/
 
