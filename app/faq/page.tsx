@@ -1,11 +1,11 @@
 import Faq from "@/components/faq"
 
-import { ClientWrapper } from "@/components/client-wrapper"
+//import { ClientWrapper } from "@/components/client-wrapper"
 
 export default function FaqPage() {
   return (
-    <ClientWrapper>
+    //<ClientWrapper>
       <Faq />
-    </ClientWrapper>
+    //</ClientWrapper>
   )
 }
