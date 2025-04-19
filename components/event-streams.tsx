@@ -175,7 +175,7 @@ export default function EventStreams() {
               >
                 <div className="space-y-4">
                   <h4 className="font-pixel text-sm text-secondary">Rules:</h4>
-                  <ul className="list-disc pl-5 space-y-2 text-sm">
+                   <ul className="list-disc pl-5 space-y-2 text-sm">
                     <li>Teams of 3-4 members</li>
                     <li>8-hour ideation challenge</li>
                     <li>Problem statements from industry partners</li>

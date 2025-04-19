@@ -82,13 +82,8 @@ const [modalOpen, setModalOpen] = useState(false)
                 <CardDescription className="text-sm mt-2 text-white/80">{event.description}</CardDescription>
               </CardHeader>
               <CardFooter className="flex flex-col gap-2">
-              <Button className="pixel-button bg-black border border-white text-white hover:bg-white hover:text-black w-full text-xs"
-               onClick={() => {setSelectedEvent(event) 
-                setModalOpen(true)
-                }}>View Details
-              </Button>
 
-                {event.registrationType === "onspot" ? (<p className="text-yellow-500 font-semibold">On-spot registration only</p>
+                {event.registrationType === "onspot" ? (<p className="text-yellow-500 font-semibold">On-spot registration only!!</p>
                 ) : (<a href={event.formUrl} className="pixel-button bg-purple-600 text-white hover:bg-purple-400 w-full text-xs text-center inline-block px-4 py-2 rounded" 
                 target="_blank" rel="noopener noreferrer"> Register</a>)}
 

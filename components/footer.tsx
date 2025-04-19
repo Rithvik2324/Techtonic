@@ -48,7 +48,7 @@ export default function Footer() {
             <h3 className="font-pixel text-lg mb-4 text-secondary">Contact Us</h3>
             <p className="text-sm mb-2">Email:techtonic.event@gmail.com</p>
             <p className="text-sm mb-2">Phone: 9542940058 (Srivibhav)</p>
-            <p className="text-sm mb-2">Phone: 8074914428 (VamshiVasam)</p>
+            <p className="text-sm mb-2">Phone: 8074914428 (Vamshi)</p>
             <p className="text-sm mb-2">Phone: 7995138562 (Veeksha)</p>
             <div className="flex gap-4">
               <a
