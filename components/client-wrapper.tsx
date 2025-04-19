@@ -10,3 +10,4 @@ export default function ClientWrapper({ children }: ClientWrapperProps) {
   // If you had any client-side functionality here before, you'll need to add it back
   return <>{children}</>;
 }*/
+
