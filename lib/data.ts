@@ -89,7 +89,7 @@ export const events: Event[] = [
     title: "BrainFuel",
     description: "One glance, and it’s gone — can your brain cache the code? Welcome to the ultimate memory-meets-syntax challenge.",
     category: "cat3",
-    formUrl: "null",
+    formUrl: "https://docs.google.com/forms/d/e/1FAIpQLScKokKVQJOka3VIG7X2Q5xupxrcAMM971BWwfffO2y_s8Zmig/viewform?usp=sharing",
     registrationType: "onspot",
   },
   {
@@ -97,7 +97,7 @@ export const events: Event[] = [
     title: "Shh..Tech Only",
     description: "Music in the ears, tech on the lips, confusion in the air. It’s teamwork, tech, and total miscommunication!",
     category: "cat3",
-    formUrl: "null",
+    formUrl: "https://docs.google.com/forms/d/e/1FAIpQLSeHxEpNGPQuQ4h5Bp18gf8F9UDmAFORfV5yVw1JAmweqo-L-g/viewform?usp=sharing",
     registrationType: "onspot"
   },
   {
@@ -105,7 +105,7 @@ export const events: Event[] = [
     title: "Sketch-A-Tech",
     description: "Get ready for a sketchy challenge of circuits, code, and creativity! A race against time where tech terms become your canvas.",
     category: "cat3",
-    formUrl: "null",
+    formUrl: "https://docs.google.com/forms/d/e/1FAIpQLSeH2-ACb0PfVT181uFYg3RSSwwzlqUiY9ISGHZUrgPmTgy4Bw/viewform?usp=sharing",
     registrationType: "onspot"
   },
   {
@@ -113,7 +113,7 @@ export const events: Event[] = [
     title: "Head's Up",
     description: "Only clues— just confusion. From “Quantum Computing” to “404 Error” — good luck explaining that!",
     category: "cat3",
-    formUrl: "null",
+    formUrl: "https://docs.google.com/forms/d/e/1FAIpQLSfBNxkDuxK95810lqsCtpR-Jf0MFi_W1KHGsF9TqaEFQINuwA/viewform?usp=sharing",
     registrationType: "onspot"
   },
   {
@@ -121,19 +121,19 @@ export const events: Event[] = [
     title: "KeySprint",
     description: "Crush the paragraph with flawless fingers, where speed meets accuracy. Every letter counts, every second matters.",
     category: "cat3",
-    formUrl:"null",
+    formUrl:"https://docs.google.com/forms/d/e/1FAIpQLSfMN9DIusHSX-wmRvtk1sVL9Y_qGtz1FhdttCt1KG5frHST8Q/viewform?usp=sharing",
     registrationType: "onspot",
   },
   {
-    id: "turbotyping",
+    id: "puzzlerelay",
     title: "Puzzle Relay",
     description: "Solve puzzles in a relay of logic and speed.The clock’s ticking, and the pieces won't place themselves!",
     category: "cat3",
-    formUrl:"null",
+    formUrl:"https://docs.google.com/forms/d/e/1FAIpQLSdkAxQJ1gU6jK0zCLtq9RDU6nyNXDPiUH72IampO9wd4OfgIg/viewform?usp=sharing",
     registrationType: "onspot",
   },
   {
-    id: "turbotyping",
+    id: "tambola",
     title: "Tambola.exe",
     description: "We swapped numbers for nerdiness — welcome to the tech edition!Cross out terms, crack up, and claim victory.",
     category: "cat3",
@@ -142,7 +142,7 @@ export const events: Event[] = [
   },
 
   {
-    id: "turbotyping",
+    id: "arcadegames",
     title:"Arcade games",
     description: "Arcade action, ticket traction, prize satisfaction!",
     category: "cat3",

@@ -378,3 +378,10 @@ function EventCard({ title, description, icon, formUrl, children, onRegister }: 
     </Card>
   )
 }
+
+
+
+
+
+
+
