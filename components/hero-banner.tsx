@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { useAuth } from "@/lib/use-auth"
-import { motion } from "framer-motion"
+import { color, motion } from "framer-motion"
 import { useRouter } from "next/navigation"
 
 export default function HeroBanner() {
@@ -142,18 +142,11 @@ export default function HeroBanner() {
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.8 }}
           >
-            <Button
-              className="pixel-button text-sm md:text-base px-8 py-6 relative group"
-              onClick={handleRegisterClick}
-            >
-              <span className="relative z-10">{user ? "EXPLORE EVENTS" : "REGISTER NOW"}</span>
-              <div className="absolute -inset-1 opacity-0 group-hover:opacity-100 transition-opacity">
-                <div className="absolute top-0 left-0 w-2 h-2 bg-primary"></div>
-                <div className="absolute top-0 right-0 w-2 h-2 bg-primary"></div>
-                <div className="absolute bottom-0 left-0 w-2 h-2 bg-primary"></div>
-                <div className="absolute bottom-0 right-0 w-2 h-2 bg-primary"></div>
-              </div>
-            </Button>
+            <h1><b>Registrations have been closed.</b><br/>
+            <br/>
+            </h1>
+            <h6>On spot registrations are available <br />
+            please register on the website for entry code</h6>
           </motion.div>
         </div>
       </div>
